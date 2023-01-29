@@ -172,6 +172,18 @@ html{
     align-items: center;
     height: 100vh;
 }
+.Consultations {
+    width: 1366px;
+    height: 768px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+    align-items: center;
+}
+
+
 /* Team  */
 .team{
     display:flex;
@@ -187,4 +199,14 @@ html{
     justify-content: center;
 
 }
+.layout {
+    margin-left: 5px;
+    width: 1366px;
+    height: 768px;
+  
+    display: flex;
+    gap: 16px;
+  
+    align-items: center;
+  }
 
