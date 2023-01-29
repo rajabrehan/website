@@ -60,30 +60,41 @@
                                     <form action="/url" method="GET">
                                     <h2 class = "home-desc">Enter How You Feel Below Without Needing to Call 811 First !!</h2>
                                     <div class = input-box>
-                                        <input id="inputbox" type="text" class="user-input" placeholder="Enter Text Here" style="width:636px">
+                                        <input id="inputbox" type="text" class="user-input" placeholder="Enter Text Here" style="width:800px;">
                                     </div>
                                     </form>
                                 </body>
                                 <div class = contact-button>
-                                
+                                <div>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly">
                                 <button class="generic-button" id="submit-button"> Submit </button>
+                                <div class = contact-button>
+                                    <!-- Button Tag-->
+                                    <button class="generic-button" onclick=`${window.location.href="#Team"}`>Meet Our Team</button>
+                                </div>
+                                </div>
+                                <h3 style="width: 70%" id="consultation-text"></h3>
+                                </div>
                                 <script type="text/javascript"> 
                                     var button = document.getElementById("submit-button");
+                                    var consultationText = document.getElementById("consultation-text");
+                                    console.log(consultationText);
                                     var inputfield = document.getElementById("inputbox").value
+                                    if (!inputfield) {
+                                        inputfield = "My throat is sore, my head hurts, I have a fever";
+                                    }
                                     button.addEventListener("click", function(){
+                                        console.log(inputfield);
                                     fetch("https://coral-app-39mdj.ondigitalocean.app/test?symptoms=" + inputfield)
                                     .then(response => response.text())
-                                    .then(text => console.log(text));
+                                    .then(text => {
+                                        consultationText.innerText = text;
+                                        console.log(text)});
                                     });
                                 </script>
                                 </div>
                             </div>
                         <div class = "OUTPUT" > </div>
-
-                        <div class = contact-button>
-                            <!-- Button Tag-->
-                            <button class="generic-button" onclick=`${window.location.href="#Team"}`>Meet Our Team</button>
-                        </div>
                     </section>
 
                     <!-- Team Section-->
