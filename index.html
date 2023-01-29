@@ -55,25 +55,27 @@
                         </div>
                         <div class = contact-button>
                             <div>
-                                <script type="text/javascript"> 
-                                    var button = document.getElementById("submit-button");
-                                    button.addEventListener("click", function(){
-                                    fetch("https://coral-app-39mdj.ondigitalocean.app/")
-                                    .then(response => console.log(response));
-                                    });
-                                </script>
+           
                                 <body>
                                     <form action="/url" method="GET">
                                     <h2 class = "home-desc">Enter How You Feel Below Without Needing to Call 811 First !!</h2>
                                     <div class = input-box>
-                                        <input type="text" class="user-input" placeholder="Enter Text Here" style="width:636px">
+                                        <input id="inputbox" type="text" class="user-input" placeholder="Enter Text Here" style="width:636px">
                                     </div>
                                     </form>
                                 </body>
                                 <div class = contact-button>
                                 
-                                <a href = ""><button class="generic-button" id="submit-button"> </button>>Submit</button></a>
-                                
+                                <button class="generic-button" id="submit-button"> Submit </button>
+                                <script type="text/javascript"> 
+                                    var button = document.getElementById("submit-button");
+                                    var inputfield = document.getElementById("inputbox").value
+                                    button.addEventListener("click", function(){
+                                    fetch("https://coral-app-39mdj.ondigitalocean.app/test?symptoms=" + inputfield)
+                                    .then(response => response.text())
+                                    .then(text => console.log(text));
+                                    });
+                                </script>
                                 </div>
                             </div>
                         <div class = "OUTPUT" > </div>
