@@ -147,6 +147,8 @@ html{
     display: flex;
     text-align: center;
     margin-bottom: 0px; 
+    padding: 25px;
+    padding-left: 200px;
 }
 
 
@@ -182,7 +184,9 @@ html{
     
     align-items: center;
 }
-
+.text-stuff{
+    margin-left:15px
+}
 
 /* Team  */
 .team{
@@ -210,3 +214,10 @@ html{
     align-items: center;
   }
 
+.team-title{
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
