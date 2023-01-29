@@ -1,0 +1,190 @@
+
+/* Entire File Customization */
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216,178,129);
+    scroll-behavior: smooth;
+    color: rgb(0, 0, 0);
+}
+
+/* margin/padding order  :  top right bottom left  */
+
+#id-title{
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.content{
+    width: 1000px
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(216,178,129);
+}
+.classname{
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 70vw;
+}
+.user-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+.nav{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-size: 1rem;
+    z-index: 999;
+    /* navbar will always be on top */
+
+}
+
+.nav-item{
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.nav-link:hover{
+    color: gray;
+}
+
+/* Home  */
+#home{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.home-title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;    
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+.home-desc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 50;
+    margin-bottom: 0px;
+}
+.home-desc2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 75;
+    margin-bottom: 0px;
+}
+.home-button{
+    display: flex;;
+    justify-content: center;
+    margin-top: 20px;
+}
+.generic-button{
+    color: white;
+    background-color: rgb(110, 63, 37);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom:30px;
+    justify-content: center;
+    align-items: center;
+
+}
+/* About  */
+#About{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.diagnosis-image{
+    justify-content: center;;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+
+
+
+.generic-button:hover{
+    background-color: rgb(213, 106, 48);
+}
+.generic-button:active{
+    background-color: rgb(110, 63, 37);
+}
+
+.contact-button{
+    display: flex;;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+/* Consultations  */
+#Consultations{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Team  */
+.team{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: inline;
+    padding: 50px 50px 50px 20px;
+
+
+}
+.rajab{
+    justify-content: center;
+
+}
+
