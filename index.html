@@ -55,6 +55,13 @@
                         </div>
                         <div class = contact-button>
                             <div>
+                                <script type="text/javascript"> 
+                                    var button = document.getElementById("submit-button");
+                                    button.addEventListener("click", function(){
+                                    fetch("https://coral-app-39mdj.ondigitalocean.app/")
+                                    .then(response => console.log(response));
+                                    }
+                                </script>
                                 <body>
                                     <form action="/url" method="GET">
                                     <h2 class = "home-desc">Enter How You Feel Below Without Needing to Call 811 First !!</h2>
@@ -63,11 +70,12 @@
                                     </div>
                                     </form>
                                 </body>
-                                
                                 <div class = contact-button>
-                                <a href = ""><button class="generic-button">Submit</button></a>
-                        </div>
-                        
+                                
+                                <a href = ""><button class="generic-button" id="submit-button"> </button>>Submit</button></a>
+                                
+                                </div>
+                            </div>
                         <div class = "OUTPUT" > </div>
 
                         <div class = contact-button>
