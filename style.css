@@ -34,9 +34,13 @@ html{
 }
 .user-input{
     display: flex;
+
+    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     justify-content: center;
+    
 }
 .nav-container{
     display: flex;
@@ -97,6 +101,9 @@ html{
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
 }
+.input-box{
+    margin-bottom: 20px;
+}
 
 .home-desc{
     display: flex;
@@ -104,7 +111,7 @@ html{
     justify-content: center;
     font-size: 25px;
     font-weight: 50;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 .home-desc2{
     display: flex;
